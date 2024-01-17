@@ -33,7 +33,7 @@ This program is free software: you can redistribute it and/or modify
 
 import math
 import numpy
-import scipy.signal  # for welch PSD
+# import scipy.signal  # for welch PSD
 
 
 def numpy_psd(x, f_sample=1.0):

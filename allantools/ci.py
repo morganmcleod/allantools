@@ -26,14 +26,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
 import numpy as np
-import scipy.stats  # used in confidence_intervals()
-import scipy.signal  # decimation in lag-1 acf
+# import scipy.stats  # used in confidence_intervals()
+# import scipy.signal  # decimation in lag-1 acf
 import allantools as at
 
 ########################################################################
 # Confidence Intervals
-ONE_SIGMA_CI = scipy.special.erf(1/np.sqrt(2))
-#    = 0.68268949213708585
+ONE_SIGMA_CI = 0.68268949213708585
 
 
 def confidence_interval(dev, edf, ci=ONE_SIGMA_CI):
